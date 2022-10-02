@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series</title>
+    <link rel="stylesheet" href="http://localhost:8084/Timeseries/resources/ol/ol.css" type="text/css">
+    <link rel="stylesheet" href="http://localhost:8084/Timeseries/resources/layerswitcher/ol-layerswitcher.css">
+    <link rel="stylesheet" href="http://localhost:8084/Timeseries/resources/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <button type="button" id="top_title" class="btn btn-info">위성화상시계렬분석에 의한 가뭄평가체계</button>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+       
+        <button type="button" id="play" class="btn btn-info">시 작</button>
+        <button type="button" id="pause" class="btn btn-danger">정 지</button>
+        <button type="button" id="reset" class="btn btn-warning">중지 및 재설정</button>
+        <button type="button" id="date_value" class="btn btn-danger"></button>
+        <button type="button" id="date" class="btn btn-danger">날 자 :</button>
+       
+    </div>
+    <img class="ndvilegend" id="ndvilegend" src="resources/images/legend/ndvi.jpg"></img>
+    <img class="lstlegend" id="lstlegend" src="resources/images/legend/LST.jpg"></img>
+    <img class="vcilegend" id="vcilegend" src="resources/images/legend/VCI.jpg"></img>
+    <img class="tcilegend" id="tcilegend" src="resources/images/legend/TCI.jpg"></img>
+    <img class="vhilegend" id="vhilegend" src="resources/images/legend/VHI.jpg"></img>
+    <img class="mcilegend" id="mcilegend" src="resources/images/legend/MCI.jpg"></img>
+    <img class="nvswilegend" id="nvswilegend" src="resources/images/legend/NVSWI.jpg"></img>
+    <img class="cdilegend" id="cdilegend" src="resources/images/legend/CDI.jpg"></img>
+
+    <script src="http://localhost:8084/Timeseries/resources/ol/ol.js"></script>
+    <script src="http://localhost:8084/Timeseries/resources/layerswitcher/ol-layerswitcher.js"></script>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
